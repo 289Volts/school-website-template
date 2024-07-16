@@ -1,12 +1,11 @@
-import Faq from "@/components/Blocks/Faq";
+import Dashes from "@/components/Atoms/Dashes";
 
 export default function Home() {
   return (
     <main className="flex h-dvh items-center justify-center">
-      <div className="flex w-[70%] flex-col gap-4 md:flex-row">
+      <div className="flex w-[70%] gap-4">
         {" "}
-        <Faq id={["1", "2"]} />
-        <Faq id={["3", "4"]} />
+        <Dashes />
       </div>
     </main>
   );
