@@ -5,39 +5,17 @@ import {
   AccordionTrigger,
 } from "../ui/accordion";
 
-const Faq = () => {
+const Faq = ({ id }: { id: string[] }) => {
   return (
-    <Accordion className="w-full" type="single" collapsible>
-      <div className="flex gap-4">
-        <div className="w-full">
-          <AccordionItem value="item-1">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-2">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-        </div>
-        <div className="w-full">
-          <AccordionItem value="item-3">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-4">
-            <AccordionTrigger>Is it accessible?</AccordionTrigger>
-            <AccordionContent>
-              Yes. It adheres to the WAI-ARIA design pattern.
-            </AccordionContent>
-          </AccordionItem>
-        </div>
-      </div>
+    <Accordion className="w-full space-y-3" type="single" collapsible>
+      {id.map((id) => (
+        <AccordionItem key={id} value={`item-${id}`}>
+          <AccordionTrigger>Is it accessible? {id}</AccordionTrigger>
+          <AccordionContent>
+            Yes. It adheres to the WAI-ARIA design pattern.
+          </AccordionContent>
+        </AccordionItem>
+      ))}
     </Accordion>
   );
 };
