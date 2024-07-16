@@ -35,6 +35,9 @@ const config = {
 					70: '#B3B3B3'
 				}
 			},
+			boxShadow: {
+				potrude: '0px 3px 0px 0px black, 2px 2px 0px 1px black'
+			},
 			keyframes: {
 				'accordion-down': {
 					from: { height: '0' },
