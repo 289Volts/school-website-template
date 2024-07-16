@@ -1,4 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-  
+
+.cancel-shadow {
+  @apply transition-shadow duration-300 lg:hover:shadow-none;
+}

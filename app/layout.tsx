@@ -1,21 +1,20 @@
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import './globals.css';
-import { outfit } from '@/lib/fonts/font';
+import { outfit } from "@/lib/fonts/font";
+import type { Metadata } from "next";
+import "./globals.css";
 
 export const metadata: Metadata = {
-	title: 'Little Learners',
-	description: 'Official website for Little Learners'
+  title: "Little Learners",
+  description: "Official website for Little Learners",
 };
 
 export default function RootLayout({
-	children
+  children,
 }: Readonly<{
-	children: React.ReactNode;
+  children: React.ReactNode;
 }>) {
-	return (
-		<html lang="en">
-			<body className={outfit.className}>{children}</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <body className={`${outfit.className} bg-primary-97`}>{children}</body>
+    </html>
+  );
 }

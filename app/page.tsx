@@ -1,9 +1,12 @@
-import CusLink from '@/components/Atoms/CusLink';
+import Faq from "@/components/Blocks/Faq";
 
 export default function Home() {
-	return (
-		<main className="h-dvh flex items-center justify-center">
-			<CusLink path="/about" />
-		</main>
-	);
+  return (
+    <main className="flex h-dvh items-center justify-center">
+      <div className="w-[30vw]">
+        {" "}
+        <Faq />
+      </div>
+    </main>
+  );
 }
