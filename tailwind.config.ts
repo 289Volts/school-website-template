@@ -43,6 +43,7 @@ const config = {
       boxShadow: {
         potrude: "0px 3px 0px 0px black, 2px 2px 0px 1px black",
         dashes: "0px 3px 0px 1px #FFBE99, 0px -3px 0px 1px #FFBE99",
+        verticalDashes: "3px 0px 0px 1px #FFBE99, -3px 0px 0px 1px #FFBE99",
       },
       keyframes: {
         "accordion-down": {
