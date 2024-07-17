@@ -1,3 +1,4 @@
+import SectionLabel from "@/components/Atoms/SectionLabel";
 import FloatingIconCard from "@/components/Blocks/FloatingIconCard";
 import { DashIcon } from "@radix-ui/react-icons";
 
@@ -27,10 +28,7 @@ export default function Home() {
   return (
     <main className="flex min-h-dvh items-center justify-center">
       <div className="flex w-[70%] flex-col pt-20 md:flex-row">
-        {" "}
-        {data.map((item, index) => (
-          <FloatingIconCard key={index} data={{ ...item, idx: index }} />
-        ))}
+        <SectionLabel label="Floating Icon Cards" />
       </div>
     </main>
   );
