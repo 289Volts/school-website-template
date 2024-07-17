@@ -6,6 +6,10 @@
   @apply transition-shadow duration-300 lg:hover:shadow-none;
 }
 
+.card-border {
+  @apply border-2 border-secondary-15 shadow-potrude;
+}
+
 .black-border {
   @apply border-2 border-secondary-15;
 }

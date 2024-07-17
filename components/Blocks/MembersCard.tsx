@@ -4,7 +4,7 @@ import { TMembersCardProps } from "../types/cards";
 
 const MembersCard = ({ data }: TMembersCardProps) => {
   return (
-    <div className="cancel-shadow black-border relative space-y-5 rounded-lg bg-white p-4 shadow-potrude md:p-5">
+    <div className="cancel-shadow card-border relative space-y-5 rounded-lg bg-white p-4 md:p-5">
       <div className="flex items-center justify-between">
         <div className="flex w-[80%] items-center gap-2.5">
           <div className="black-border aspect-square h-[2.725rem] rounded-lg bg-primary-97 md:rounded-[10px]">
