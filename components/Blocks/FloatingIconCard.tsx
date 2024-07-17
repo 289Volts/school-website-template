@@ -1,5 +1,6 @@
 import { raleway } from "@/lib/fonts/font";
-import { TFloatingIconCardProps } from "../types/flotingIconCard";
+import IconBox from "../Atoms/IconBox";
+import { TFloatingIconCardProps } from "../types/cards";
 
 const FloatingIconCard = ({ data, withIcon }: TFloatingIconCardProps) => {
   return (
@@ -10,7 +11,7 @@ const FloatingIconCard = ({ data, withIcon }: TFloatingIconCardProps) => {
             <div
               className={`shadow-verticalDashes h-10 w-0.5 bg-black md:hidden ${data.idx === 0 ? "hidden" : "block"}`}
             />
-            <div className="w-fit rounded-lg border-2 border-secondary-15 bg-white p-1.5 px-4 pb-[9px] shadow-potrude">
+            <div className="black-border w-fit rounded-lg bg-white p-1.5 px-4 pb-[9px] shadow-potrude">
               {/* {data.icon} */}
               <span
                 className={`${raleway.className} text-4xl font-extrabold text-secondary-10 md:text-[40px]`}
@@ -22,11 +23,9 @@ const FloatingIconCard = ({ data, withIcon }: TFloatingIconCardProps) => {
           </div>
         </div>
       )}
-      <div className="cancel-shadow relative rounded-lg border-2 border-secondary-15 bg-white p-4 shadow-potrude md:p-5">
+      <div className="cancel-shadow black-border relative rounded-lg bg-white p-4 shadow-potrude md:p-5">
         {withIcon ? (
-          <div className="absolute top-[-1.2rem] rounded-lg border-2 border-secondary-15 bg-primary-90 p-1.5">
-            {data.icon}
-          </div>
+          <IconBox className="absolute top-[-1.2rem]" icon={data.icon} />
         ) : null}
         <h3
           className={`${raleway.className} my-2 text-xl font-bold text-secondary-10 md:text-2xl`}

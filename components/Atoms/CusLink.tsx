@@ -5,7 +5,7 @@ const CusLink = ({ path }: { path: string }) => {
   return (
     <Link
       href={path}
-      className="cancel-shadow flex w-full items-center gap-2.5 rounded-md border-2 border-secondary-15 bg-primary-90 py-3 font-medium shadow-potrude md:rounded-lg"
+      className="cancel-shadow black-border flex w-full items-center gap-2.5 rounded-md bg-primary-90 py-3 font-medium shadow-potrude md:rounded-lg"
     >
       <span className="text-secondary-20 md:text-lg 2xl:text-xl">
         Learn More

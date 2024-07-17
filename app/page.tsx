@@ -1,11 +1,10 @@
-import SectionLabel from "@/components/Atoms/SectionLabel";
-import FloatingIconCard from "@/components/Blocks/FloatingIconCard";
+import MembersCard from "@/components/Blocks/MembersCard";
 import { DashIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   const data = [
     {
-      heading: "Floating Icon Card",
+      heading: "Ms. Emily Hernandez",
       description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       icon: <DashIcon className="h-6 w-6 text-secondary-10" />,
     },
@@ -27,8 +26,8 @@ export default function Home() {
   ];
   return (
     <main className="flex min-h-dvh items-center justify-center">
-      <div className="flex w-[70%] flex-col pt-20 md:flex-row">
-        <SectionLabel label="Floating Icon Cards" />
+      <div className="flex w-[90%] flex-col pt-20 md:flex-row">
+        <MembersCard data={data[0]} />
       </div>
     </main>
   );

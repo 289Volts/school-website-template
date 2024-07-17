@@ -15,7 +15,7 @@ const AccordionItem = React.forwardRef<
   <AccordionPrimitive.Item
     ref={ref}
     className={cn(
-      "rounded-[10px] border-2 border-secondary-15 bg-primary-95 px-4 md:px-5 [&[data-state=open]]:bg-white",
+      "black-border rounded-[10px] bg-primary-95 px-4 md:px-5 [&[data-state=open]]:bg-white",
       className,
     )}
     {...props}
@@ -38,7 +38,7 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <div className="cont relative aspect-square w-[32px] shrink-0 rounded border-2 border-secondary-15 bg-primary-97 p-1">
+      <div className="cont black-border relative aspect-square w-[32px] shrink-0 rounded bg-primary-97 p-1">
         <DashIcon className="dash absolute inset-0 m-auto h-6 w-6 text-secondary-15 transition-transform duration-300" />
         <PlusIcon className="plus absolute inset-0 m-auto h-4 w-4 text-secondary-15 transition-transform duration-200" />
       </div>
