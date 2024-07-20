@@ -1,12 +1,12 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
 const config = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
   ],
   prefix: "",
   theme: {
@@ -18,6 +18,33 @@ const config = {
       },
     },
     extend: {
+      colors: {
+        primary: {
+          65: "#FF8D4C",
+          70: "#FF9E66",
+          75: "#FFAE80",
+          80: "#FFBE99",
+          90: "#FFDECC",
+          95: "#FFEFE5",
+          97: "#FFF5F0",
+          99: "#FFFCFA",
+        },
+        secondary: {
+          10: "#191919",
+          15: "#262626",
+          20: "#333333",
+          30: "#4C4C4D",
+          35: "#59595A",
+          40: "#656567",
+          60: "#98989A",
+          70: "#B3B3B3",
+        },
+      },
+      boxShadow: {
+        potrude: "0px 3px 0px 0px black, 2px 2px 0px 1px black",
+        dashes: "0px 3px 0px 1px #FFBE99, 0px -3px 0px 1px #FFBE99",
+        verticalDashes: "3px 0px 0px 1px #FFBE99, -3px 0px 0px 1px #FFBE99",
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },
@@ -35,6 +62,6 @@ const config = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+} satisfies Config;
 
-export default config
+export default config;
