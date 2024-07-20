@@ -6,7 +6,7 @@ const FloatingIconCard = ({ data, withIcon }: TFloatingIconCardProps) => {
   return (
     <div className="">
       {data.idx && !withIcon && (
-        <div className="flex flex-col items-center md:items-start">
+        <div className="flex h-full flex-col items-center md:items-start">
           <div className="flex flex-col items-center">
             <div
               className={`h-10 w-0.5 bg-black shadow-verticalDashes md:hidden ${data.idx === 0 ? "hidden" : "block"}`}
@@ -23,7 +23,7 @@ const FloatingIconCard = ({ data, withIcon }: TFloatingIconCardProps) => {
           </div>
         </div>
       )}
-      <div className="cancel-shadow card-border relative rounded-lg bg-white p-4 md:p-5">
+      <div className="cancel-shadow card-border relative h-full rounded-lg bg-white p-4 md:p-5">
         {withIcon ? (
           <IconBox className="absolute top-[-1.35rem]" icon={data.icon} />
         ) : null}

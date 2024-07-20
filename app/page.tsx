@@ -49,7 +49,7 @@ export default function Home() {
       <section className="flex flex-col lg:flex-row lg:items-center lg:justify-between">
         <div className="h-[300px] w-[48%] bg-primary-80"></div>
         <div className="flex flex-col text-center lg:w-[48%] lg:text-left">
-          <p className="mb-2.5 w-fit border-b-2 border-b-secondary-15 pb-1.5 font-medium text-secondary-15">
+          <p className="mx-auto mb-2.5 w-fit border-b-2 border-b-secondary-15 pb-1.5 font-medium text-secondary-15">
             Welcome to Little Learners Academy
           </p>
           <div className="space-y-4">
@@ -89,7 +89,7 @@ export default function Home() {
           label="Children Deserve Bright Future"
           heading="Our Benefits"
         />
-        <div className="space-y-14">
+        <div className="space-y-14 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 md:space-y-0 xl:grid-cols-3 xl:gap-x-10 xl:gap-y-14">
           {data.map((data, idx) => (
             <FloatingIconCard key={idx} data={data} withIcon={true} />
           ))}
