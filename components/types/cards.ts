@@ -3,7 +3,7 @@ export type TFloatingIconCardProps = {
     heading: string;
     description: string;
     icon: React.ReactNode;
-    idx: number;
+    idx?: number;
   };
   withIcon?: boolean;
 };
@@ -15,5 +15,14 @@ export type TMembersCardProps = {
     description: string;
     icon: React.ReactNode;
     img: string;
+  };
+};
+
+export type TTestimonialCardProps = {
+  data: {
+    heading: string;
+    description: string;
+    rating: 1 | 2 | 3 | 4 | 5;
+    gender: "male" | "female";
   };
 };
