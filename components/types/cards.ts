@@ -3,7 +3,7 @@ export type TFloatingIconCardProps = {
     heading: string;
     description: string;
     icon: React.ReactNode;
-    idx: number;
+    idx?: number;
   };
   withIcon?: boolean;
 };
