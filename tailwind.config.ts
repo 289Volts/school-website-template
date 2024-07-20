@@ -18,6 +18,14 @@ const config = {
       },
     },
     extend: {
+      width: {
+        50: "50%",
+        70: "70%",
+        80: "80%",
+        85: "85%",
+        88: "88%",
+        90: "90%",
+      },
       colors: {
         primary: {
           65: "#FF8D4C",
@@ -41,7 +49,8 @@ const config = {
         },
       },
       boxShadow: {
-        potrude: "0px 3px 0px 0px black, 2px 2px 0px 1px black",
+        potrude: "4px 4px 0px 1px black",
+        potrudePrimary: "4px 4px 0px 1px #FFBE99",
         dashes: "0px 3px 0px 1px #FFBE99, 0px -3px 0px 1px #FFBE99",
         verticalDashes: "3px 0px 0px 1px #FFBE99, -3px 0px 0px 1px #FFBE99",
       },

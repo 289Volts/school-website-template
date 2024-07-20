@@ -10,6 +10,10 @@
   @apply border-2 border-secondary-15 shadow-potrude;
 }
 
+.primary-card-border {
+  @apply shadow-potrudePrimary border-2 border-secondary-15;
+}
+
 .black-border {
   @apply border-2 border-secondary-15;
 }
